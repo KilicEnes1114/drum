@@ -1,0 +1,46 @@
+body {
+  background: #222;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  transition: 0.3s ease;
+}
+
+.dark-mode {
+  background: #eee;
+  color: #111;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: 3px solid #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  background: #444;
+}
+
+.key.playing {
+  animation: pulse 0.3s ease;
+  background: yellow;
+  color: black;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
